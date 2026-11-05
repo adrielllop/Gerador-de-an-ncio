@@ -1,18 +1,13 @@
 {
-  "name": "pixgenai",
+  "name": "pixelia",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "packageManager": "pnpm@10.15.0",
-  "engines": {
-    "node": ">=20"
-  },
   "scripts": {
-    "dev": "node server.mjs",
-    "start": "node server.mjs",
-    "check": "node --check server.mjs && node --check app.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "pg": "8.13.1"
+    "@supabase/supabase-js": "^2.57.0",
+    "express": "^5.1.0",
+    "openai": "^5.20.0"
   }
 }
