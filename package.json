@@ -1,12 +1,11 @@
 {
   "name": "pixelia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.57.0",
     "express": "^5.1.0",
     "openai": "^5.20.0"
   }

@@ -21,3 +21,6 @@ LIMITAÇÃO IMPORTANTE:
 Como você escolheu armazenar créditos somente no dispositivo e não usar banco de dados, o saldo local pode ser apagado ou manipulado pelo próprio usuário. A lista de pagamentos resgatados também é local; não existe uma base central para impedir tentativas avançadas de reutilização de comprovantes em outros navegadores. Isso é uma solução simples para protótipo/baixo risco, não uma carteira antifraude para operação comercial de grande escala.
 
 Nunca exponha as chaves no HTML/JavaScript. Use somente variáveis de ambiente da Vercel.
+
+CORREÇÃO DO ERRO PNPM:
+Se a Vercel mostrar ERR_PNPM_OUTDATED_LOCKFILE, remova o arquivo pnpm-lock.yaml antigo do repositório GitHub e faça commit. Este pacote não inclui pnpm-lock.yaml e usa apenas express e openai. Depois, na Vercel, faça Redeploy. Se o painel oferecer a opção, marque Clear Build Cache.
