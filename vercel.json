@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.mjs"
+    }
+  ],
+  "functions": {
+    "server.mjs": {
+      "maxDuration": 60,
+      "includeFiles": [
+        "index.html",
+        "styles.css",
+        "app.js",
+        "schema.sql",
+        "logo.svg"
+      ]
+    }
+  }
+}
